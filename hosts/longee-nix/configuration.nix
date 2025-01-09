@@ -79,10 +79,10 @@
     allowSFTP = true;
   };
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  # programs.hyprland = {
+  #   enable = true;
+  #   xwayland.enable = true;
+  # };
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

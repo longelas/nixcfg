@@ -35,7 +35,7 @@
     ];
     system = "x86_64-linux";
     user = "longee";
-    homeStateVersion = "1.0";
+    homeStateVersion = "24.11";
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {
     packages =
