@@ -33,6 +33,7 @@
       "aarch64-darwin"
       "x86_64-darwin"
     ];
+    user = "longee";
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {
     packages =
@@ -47,7 +48,7 @@
     homeConfigurations = {
       "longee@longee-nix" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages."x86_64-linux";
-        extraSpecialArgs = {inherit inputs outputs;};
+        extraSpecialArgs = {inherit inputs user outputs;};
         modules = [./home/longee/longee-nix.nix];
       };
     };
