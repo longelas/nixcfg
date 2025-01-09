@@ -33,6 +33,7 @@
       "aarch64-darwin"
       "x86_64-darwin"
     ];
+    system = "x86_64-linux";
     user = "longee";
     homeStateVersion = "1.0";
     forAllSystems = nixpkgs.lib.genAttrs systems;
