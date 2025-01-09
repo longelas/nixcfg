@@ -7,7 +7,6 @@
   
   programs.zsh.enable = true;
   users.users.longee = {
-    defaultUserShell = pkgs.zsh;
     initialHashedPassword = "$y$j9T$yfrJBk8yMn1GMkJNqHCGA/$YpsLrkSClbtDy.O9uSvJQXr8G3xbDm9weH3zg9cr7T5";
     isNormalUser = true;
     description = "longee";
