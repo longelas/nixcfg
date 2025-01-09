@@ -34,6 +34,7 @@
       "x86_64-darwin"
     ];
     user = "longee";
+    homeStateVersion = "1.0";
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {
     packages =
@@ -45,12 +46,25 @@
         modules = [./hosts/longee-nix];
       };
     };
-    homeConfigurations = {
-      "longee@longee-nix" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages."x86_64-linux";
-        extraSpecialArgs = {inherit inputs user outputs;};
-        modules = [./home/longee/longee-nix.nix];
+    # homeConfigurations = {
+    #   "longee@longee-nix" = home-manager.lib.homeManagerConfiguration {
+    #     pkgs = nixpkgs.legacyPackages."x86_64-linux";
+    #     extraSpecialArgs = {inherit inputs user outputs;};
+    #     modules = [./home/longee/longee-nix.nix];
+    #   };
+    # };
+
+    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.${system};
+      extraSpecialArgs = {
+        inherit inputs homeStateVersion user;
       };
+
+      modules = [
+        ./home-manager/home.nix
+      ];
     };
+
+
   };
 }
