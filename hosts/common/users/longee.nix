@@ -19,7 +19,6 @@
       "input"
       "kvm"
       "qemu-libvirtd"
-      "docker"
     ];
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGsUQTVZR2GONHiHZEKH2bsomxbcpnzF9+oj9Qk/TXJ+ mt.hrvth@gmail.com"];
