@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../nixos/modules
     ];
 
   # Bootloader.
@@ -25,8 +26,6 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
-  time.timeZone = "Europe/Budapest";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
