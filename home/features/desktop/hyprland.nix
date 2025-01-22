@@ -4,9 +4,6 @@
 
         settings = 
         {
-            wayland.windowManager.hyprland = {
-                enable = true;
-                settings = {
                     monitor = [
                         ",preferred,auto,auto"
                         ",preferred,auto,auto"
@@ -38,17 +35,6 @@
                         };
                         sensitivity = 0;
                     };
-
-                    device = [
-                        {
-                            name = "zsa-technology-labs-moonlander-mark-i";
-                            kb_layout = "us";
-                        }
-                        {
-                            name = "epic-mouse-v1";
-                            sensitivity = -0.5;
-                        }
-                    ];
 
                     general = {
                         gaps_in = 5;
@@ -196,6 +182,4 @@
                     ];
                 };
             };
-        };
-    };
 }
