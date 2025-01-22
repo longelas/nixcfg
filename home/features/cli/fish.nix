@@ -27,8 +27,8 @@ with lib; let
                     ps = "procs";
                     grep = "rg";
 
-                }
-            }
-        }
+                };
+            };
+        };
 
 }
