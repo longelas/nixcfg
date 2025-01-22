@@ -15,6 +15,6 @@
         
         desktop = {
             wayland.enable = true;
-        }
+        };
     };
 }
