@@ -1,4 +1,4 @@
-{ config, ... }: { 
+{ 
     imports = [ 
         ../common
         ../features/cli/default.nix
@@ -9,6 +9,7 @@
         cli = {
             fish.enable = true;
             fzf.enable = true;
+            neofetch.enable = true;
         };
     };
 }
