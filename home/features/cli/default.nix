@@ -1,5 +1,7 @@
 {pkgs, ...}: {
-
+    imports = [
+        ./fish.nix
+    ];
     programs.zoxide = {
         enable = true;
         enableFishIntegration = true;
@@ -18,11 +20,13 @@
         coreutils
         fd 
         htop
+        btop
         httpie
         jq 
         procs 
         ripgrep 
         tldr 
         zip
+        thefuck
     ];
 }
