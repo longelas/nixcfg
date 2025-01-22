@@ -8,6 +8,7 @@
     features = {
         cli = {
             fish.enable = true;
+            fzf.enable = true;
         };
     };
 }
