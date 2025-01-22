@@ -1,8 +1,8 @@
 { config, ... }: { 
     imports = [ 
         ../common
-        ./home.nix 
         ../features/cli/default.nix
+        ./home.nix 
     ]; 
 
     features = {
