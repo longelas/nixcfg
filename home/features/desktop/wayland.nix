@@ -246,6 +246,6 @@ in{
             wlogout
             wtype
             ydotool
-        ]
-    }
+        ];
+    };
 }
