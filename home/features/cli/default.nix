@@ -12,19 +12,17 @@
         extraOptions = ["-l" "--icons" "--git" "-a"];
     };
 
-    programs.bat = {enable=true;};
+    programs.bat = {enable = true; };
 
     home.packages = with pkgs; [
         coreutils
         fd 
         htop
-        btop
         httpie
         jq 
         procs 
         ripgrep 
         tldr 
         zip
-        thefuck
-    ]
+    ];
 }
