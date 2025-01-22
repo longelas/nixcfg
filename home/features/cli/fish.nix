@@ -6,9 +6,9 @@
 with lib; let
     cfg = config.features.cli.fish;
     in {
-        options.features.cli.fish.enable = mkEnableOption "enable extended fish configuration";
+    options.features.cli.fish.enable = mkEnableOption "enable extended fish configuration";
 
-        config = mkIf cfg.enable {
+    config = mkIf cfg.enable {
             programs.fish = {
                 enable = true;
                 loginShellInit = ''
@@ -16,7 +16,7 @@ with lib; let
                 set -x NIX_LOG info
                 set -x TERMINAL kitty
 
-                if test (tty) = "/dev/tt1"
+                if test (tty) = "/dev/tty1"
                     exec Hyprland &> /dev/null
                 end
                 '';
@@ -29,6 +29,6 @@ with lib; let
 
                 };
             };
-        };
+    };
 
 }
