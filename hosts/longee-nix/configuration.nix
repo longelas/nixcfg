@@ -76,12 +76,6 @@
       hyprlock.enable = false;
     };
 
-    cursor = {
-      name = "DMZ-Black";
-      size = 24;
-      package = pkgs.vanilla-dmz;
-    };
-
     fonts = {
       emoji = {
         name = "Noto Color Emoji";
