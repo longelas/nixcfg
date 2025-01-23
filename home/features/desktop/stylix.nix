@@ -1,4 +1,4 @@
-{ pkgs, inputs, stylix, home-manager, ... }: {
+{ pkgs, inputs, home-manager, ... }: {
   imports = [ stylix.nixosModules.stylix ];
 
   home.packages = with pkgs; [
