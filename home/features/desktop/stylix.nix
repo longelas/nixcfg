@@ -70,9 +70,5 @@
     };
   };
 
-  home-manager.sharedModules = [
-    {
-      stylix.enable = true;
-      }
-  ];
+  
 }
