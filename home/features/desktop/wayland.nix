@@ -12,7 +12,7 @@ in{
     config = mkIf cfg.enable {
         programs.waybar = {
             enable = true;
-            style = ./waybar.css;
+            # style = ./waybar.css;
             settings = {
             mainBar = {
                 layer = "top";
