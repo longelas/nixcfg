@@ -2,7 +2,7 @@
     imports = [
         ./hyprland.nix
         ./wayland.nix
-        #./stylix.nix
+        ./stylix.nix
     ];
 
     home.packages = with pkgs; [
