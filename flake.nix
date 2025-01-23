@@ -46,7 +46,10 @@
     nixosConfigurations = {
       longee-nix = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        modules = [./hosts/longee-nix];
+        modules = [
+          ./hosts/longee-nix
+          inputs.stylix.nixosModules.stylix
+          ];
       };
     };
     homeConfigurations = {
