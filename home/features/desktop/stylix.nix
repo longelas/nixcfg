@@ -69,4 +69,10 @@
       sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
     };
   };
+
+  home-manager.sharedModules = [
+    {
+      stylix.enable = true;
+      }
+  ]
 }
