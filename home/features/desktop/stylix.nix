@@ -1,5 +1,5 @@
 { pkgs, inputs, stylix, home-manager, ... }: {
-  imports = [ inputs.stylix.homeManagerModules.stylix ];
+  imports = [ stylix.nixosModules.stylix ];
 
   home.packages = with pkgs; [
     dejavu_fonts
