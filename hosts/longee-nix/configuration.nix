@@ -66,7 +66,8 @@
     stylix = {
     enable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+    base16Scheme = "${inputs.tt-schemes}/base16/gruvbox-material-dark-medium.yaml";
 
 
     fonts = {
