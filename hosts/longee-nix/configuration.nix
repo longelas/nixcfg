@@ -60,11 +60,9 @@
     git
     neovim
     nh
+    cavalier
   ];
 
-   environment.systemPackages = [
-    pkgs.cavalier
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
