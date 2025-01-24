@@ -68,7 +68,6 @@
         modules = [
           ./hosts/longee-nix
           inputs.stylix.nixosModules.stylix
-          base16.nixosModule
           ];
       };
     };
