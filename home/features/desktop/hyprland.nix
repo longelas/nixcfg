@@ -38,7 +38,7 @@ in {
 
                     shadow = {
                         enable = false;
-                    }
+                    };
 
                     input = {
                         kb_layout = "us,hu";
