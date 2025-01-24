@@ -74,7 +74,6 @@
       };
 
 
-
       fonts = {
         emoji = {
           name = "Noto Color Emoji";
@@ -107,6 +106,8 @@
   };
 
 
+  stylix.targets.waybar.enable = true; # Ensure Stylix manages Waybar
+  
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
