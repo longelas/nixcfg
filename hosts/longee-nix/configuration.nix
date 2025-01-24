@@ -65,45 +65,49 @@
   ];
 
     stylix = {
-    enable = true;
-    polarity = "dark";
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
-    base16Scheme = {
-      yaml = "${inputs.tt-schemes}/base16/gruvbox-material-dark-medium.yaml";
-      use-ifd = "always";  # to suppress errors, set to "always"
-    };
-
-
-
-    fonts = {
-      emoji = {
-        name = "Noto Color Emoji";
-        package = pkgs.noto-fonts-color-emoji;
-      };
-      monospace = {
-        name = "JetBrains Mono";
-        package = pkgs.jetbrains-mono;
-      };
-      sansSerif = {
-        name = "Noto Sans";
-        package = pkgs.noto-fonts;
-      };
-      serif = {
-        name = "Noto Serif";
-        package = pkgs.noto-fonts;
+      enable = true;
+      polarity = "dark";
+      # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+      base16Scheme = {
+        yaml = "${inputs.tt-schemes}/base16/gruvbox-material-dark-medium.yaml";
+        use-ifd = "always";  # to suppress errors, set to "always"
       };
 
-      sizes = {
-        terminal = 13;
-        applications = 11;
+      targets = {
+        waybar.enable = false;
       };
-    };
 
 
-    image = pkgs.fetchurl {
-      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
-      sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
-    };
+
+      fonts = {
+        emoji = {
+          name = "Noto Color Emoji";
+          package = pkgs.noto-fonts-color-emoji;
+        };
+        monospace = {
+          name = "JetBrains Mono";
+          package = pkgs.jetbrains-mono;
+        };
+        sansSerif = {
+          name = "Noto Sans";
+          package = pkgs.noto-fonts;
+        };
+        serif = {
+          name = "Noto Serif";
+          package = pkgs.noto-fonts;
+        };
+
+        sizes = {
+          terminal = 13;
+          applications = 11;
+        };
+      };
+
+
+      image = pkgs.fetchurl {
+        url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
+        sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
+      };
   };
 
 
