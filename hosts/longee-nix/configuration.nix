@@ -73,10 +73,6 @@
         use-ifd = "always";  # to suppress errors, set to "always"
       };
 
-      targets = {
-        waybar.enable = false;
-      };
-
 
 
       fonts = {
