@@ -58,22 +58,22 @@ in {
                         layout = "dwindle";
                     };
 
-                    decoration = {
-                        "col.shadow" = "rgba(1E202966)";
-                        drop_shadow = true;
-                        shadow_range = 60;
-                        shadow_offset = "1 2";
-                        shadow_render_power = 3;
-                        shadow_scale = 0.97;
-                        rounding = 8;
-                        blur = {
-                            enabled = true;
-                            size = 3;
-                            passes = 3;
-                        };
-                        active_opacity = 0.9;
-                        inactive_opacity = 0.5;
-                    };
+                    # decoration = {
+                    #     "col.shadow" = "rgba(1E202966)";
+                    #     drop_shadow = true;
+                    #     shadow_range = 60;
+                    #     shadow_offset = "1 2";
+                    #     shadow_render_power = 3;
+                    #     shadow_scale = 0.97;
+                    #     rounding = 8;
+                    #     blur = {
+                    #         enabled = true;
+                    #         size = 3;
+                    #         passes = 3;
+                    #     };
+                    #     active_opacity = 0.9;
+                    #     inactive_opacity = 0.5;
+                    # };
 
                     animations = {
                         enabled = true;

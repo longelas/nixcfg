@@ -61,6 +61,7 @@
     neovim
     nh
     cavalier
+    gh
   ];
 
     stylix = {
