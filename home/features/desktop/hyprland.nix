@@ -36,6 +36,10 @@ in {
                         "GTK_THEME,Dracula"
                     ];
 
+                    shadow = {
+                        enable = false;
+                    }
+
                     input = {
                         kb_layout = "us,hu";
                         kb_variant = "";
