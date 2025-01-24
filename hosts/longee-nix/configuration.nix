@@ -73,6 +73,7 @@
         use-ifd = "always";  # to suppress errors, set to "always"
       };
 
+      stylix.targets.waybar.enable = true; # Ensure Stylix manages Waybar
 
       fonts = {
         emoji = {
@@ -106,7 +107,6 @@
   };
 
 
-  stylix.targets.waybar.enable = true; # Ensure Stylix manages Waybar
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
