@@ -36,19 +36,6 @@ in {
                         "GTK_THEME,Dracula"
                     ];
 
-                    decoration = {
-                        col.shadow = mkDefault "rgb(8ec078c)";
-                        rounding = mkDefault 10;
-                        blur = {
-                            enabled = mkDefault true;
-                            size = mkDefault 3;
-                            passes = mkDefault 1;
-                        };
-                        drop_shadow = mkDefault true;
-                        shadow_range = mkDefault 4;
-                        shadow_render_power = mkDefault 3;
-                    };
-
                     input = {
                         kb_layout = "us,hu";
                         kb_variant = "";
