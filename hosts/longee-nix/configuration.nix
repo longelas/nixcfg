@@ -73,7 +73,6 @@
         use-ifd = "always";  # to suppress errors, set to "always"
       };
 
-      targets.waybar.enable = true; # Ensure Stylix manages Waybar
 
       fonts = {
         emoji = {
