@@ -14,6 +14,7 @@
         font-awesome
         powerline-fonts
         powerline-symbols
-        nerd-fonts
+        pkgs.nerd-fonts._0xproto
+        pkgs.nerd-fonts.droid-sans-mono
     ];
 }
