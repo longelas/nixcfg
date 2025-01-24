@@ -36,6 +36,10 @@ in {
                         "GTK_THEME,Dracula"
                     ];
 
+                    decoration = {
+                        col.shadow=rgb(8ec078c);
+                    };
+
                     input = {
                         kb_layout = "us,hu";
                         kb_variant = "";
@@ -49,7 +53,7 @@ in {
                         sensitivity = 0;
                     };
 
-                     master.new_status = "master";
+                    #master.new_status = "master";
                     #master.new_is_master = true;
 
                     gestures.workspace_swipe = false;
