@@ -35,11 +35,6 @@ in {
                         "WLR_NO_HARDWARE_CURSORS,1" 
                         "GTK_THEME,Dracula"
                     ];
-                    decoration = {
-                        shadow = {
-                            enable = false;
-                        };
-                    };
 
                     input = {
                         kb_layout = "us,hu";
